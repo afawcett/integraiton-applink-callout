@@ -1,0 +1,154 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OppRef1"
+      },
+      "Name": "Acme Cloud Expansion",
+      "AccountId": "@AccountRef1",
+      "StageName": "Prospecting",
+      "Amount": 102000,
+      "CloseDate": "2025-01-15",
+      "Type": "New Customer",
+      "Probability": 20,
+      "LeadSource": "Web",
+      "Description": "Provision additional compute, database, and storage capacity for Acme Cloud."
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OppRef2"
+      },
+      "Name": "Global Retail Analytics Upgrade",
+      "AccountId": "@AccountRef2",
+      "StageName": "Qualification",
+      "Amount": 122000,
+      "CloseDate": "2024-12-05",
+      "Type": "Existing Customer - Upgrade",
+      "Probability": 40,
+      "LeadSource": "Partner Referral",
+      "Description": "Upgrade retail analytics workloads with high-memory compute and analytics databases."
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OppRef3"
+      },
+      "Name": "FinServe Disaster Recovery Rollout",
+      "AccountId": "@AccountRef3",
+      "StageName": "Prospecting",
+      "Amount": 58000,
+      "CloseDate": "2024-11-18",
+      "Type": "New Customer",
+      "Probability": 25,
+      "LeadSource": "Other",
+      "Description": "Introduce managed disaster recovery automation and premium support for FinServe."
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OppRef4"
+      },
+      "Name": "HealthOne Managed Database Refresh",
+      "AccountId": "@AccountRef4",
+      "StageName": "Proposal/Price Quote",
+      "Amount": 104000,
+      "CloseDate": "2024-10-02",
+      "Type": "Existing Customer - Replacement",
+      "Probability": 70,
+      "LeadSource": "Web",
+      "Description": "Refresh transactional and analytics databases with managed services for HealthOne."
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OppRef5"
+      },
+      "Name": "Logistics Edge Compute Deployment",
+      "AccountId": "@AccountRef5",
+      "StageName": "Negotiation/Review",
+      "Amount": 132000,
+      "CloseDate": "2024-09-12",
+      "Type": "Existing Customer - Upgrade",
+      "Probability": 80,
+      "LeadSource": "Partner Referral",
+      "Description": "Deploy edge compute capacity plus service mesh gateway for Logistics Hub."
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OppRef6"
+      },
+      "Name": "EduTech Observability Pilot",
+      "AccountId": "@AccountRef6",
+      "StageName": "Prospecting",
+      "Amount": 64000,
+      "CloseDate": "2024-08-20",
+      "Type": "New Customer",
+      "Probability": 30,
+      "LeadSource": "Web",
+      "Description": "Pilot observability tooling and object storage for EduTech campus environments."
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OppRef7"
+      },
+      "Name": "EnergyCo Storage Tier Migration",
+      "AccountId": "@AccountRef7",
+      "StageName": "Closed Won",
+      "Amount": 83000,
+      "CloseDate": "2024-07-31",
+      "Type": "Existing Customer - Upgrade",
+      "Probability": 100,
+      "LeadSource": "Web",
+      "Description": "Migrate EnergyCo workloads to new storage tiers with DR automation."
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OppRef8"
+      },
+      "Name": "TravelPro Support Renewal",
+      "AccountId": "@AccountRef8",
+      "StageName": "Qualification",
+      "Amount": 54000,
+      "CloseDate": "2024-06-15",
+      "Type": "Existing Customer - Upgrade",
+      "Probability": 45,
+      "LeadSource": "Partner Referral",
+      "Description": "Renew premium support while expanding monitoring coverage for TravelPro."
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OppRef9"
+      },
+      "Name": "Industrial IoT Mesh Expansion",
+      "AccountId": "@AccountRef9",
+      "StageName": "Proposal/Price Quote",
+      "Amount": 132000,
+      "CloseDate": "2024-05-28",
+      "Type": "Existing Customer - Upgrade",
+      "Probability": 60,
+      "LeadSource": "Partner Referral",
+      "Description": "Expand service mesh, compute footprint, and monitoring for Industrial IoT rollout."
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "referenceId": "OppRef10"
+      },
+      "Name": "Startup Launch Bundle",
+      "AccountId": "@AccountRef10",
+      "StageName": "Prospecting",
+      "Amount": 118000,
+      "CloseDate": "2024-05-01",
+      "Type": "New Customer",
+      "Probability": 35,
+      "LeadSource": "Web",
+      "Description": "Bundle compute, observability, and recovery services for a startup launch."
+    }
+  ]
+}

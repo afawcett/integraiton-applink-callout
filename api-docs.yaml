@@ -1,0 +1,116 @@
+openapi: 3.0.1
+info:
+  title: Provisioning API
+  description: API for provisioning external services asynchronously from
+    Salesforce via AppLink.
+  version: 1.0.0
+components:
+  schemas:
+    ProvisionServicesRequest:
+      type: object
+      required:
+        - opportunityIds
+      description: Request to provision services for multiple opportunities
+      properties:
+        opportunityIds:
+          type: array
+          items:
+            type: string
+          description: Array of opportunity IDs to provision services for
+        callbackUrl:
+          type: string
+          description: Callback URL for asynchronous response
+    ProvisionServicesResponse:
+      type: object
+      required:
+        - jobId
+      description: Response for service provisioning - returns job ID for async operation
+      properties:
+        jobId:
+          type: string
+          description: Unique identifier for tracking the provisioning job
+paths:
+  /api/provisionServices:
+    post:
+      operationId: provisionServices
+      summary: Submit Provisioning Job
+      tags:
+        - Provisioning
+      description: Provision services for a list of Opportunity IDs based on their
+        line items.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProvisionServicesRequest"
+      x-sfdc:
+        heroku:
+          authorization:
+            connectedApp: ProvisioningServiceConnectedApp
+            permissionSet: ProvisioningServicePermissions
+      callbacks:
+        provisioningStatus:
+          "{$request.body#/callbackUrl}":
+            post:
+              description: Callback with provisioning status per requested service
+              operationId: provisioningStatusCallback
+              requestBody:
+                content:
+                  application/json:
+                    schema:
+                      type: object
+                      properties:
+                        jobId:
+                          type: string
+                        opportunityIds:
+                          type: array
+                          items:
+                            type: string
+                        services:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              serviceId:
+                                type: string
+                              opportunityId:
+                                type: string
+                              lineItemId:
+                                type: string
+                              productReference:
+                                type: string
+                              status:
+                                type: string
+                              message:
+                                type: string
+                        summary:
+                          type: object
+                          properties:
+                            total:
+                              type: integer
+                            succeeded:
+                              type: integer
+                            failed:
+                              type: integer
+                        status:
+                          type: string
+                        errors:
+                          type: array
+                          items:
+                            type: string
+              responses:
+                "200":
+                  description: Provisioning callback received successfully
+      responses:
+        "201":
+          description: Provisioning request accepted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProvisionServicesResponse"
+servers:
+  - url: http://localhost:5000
+    description: Local development server
+tags:
+  - name: Provisioning
+    description: Provisioning endpoints

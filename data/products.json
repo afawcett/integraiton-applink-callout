@@ -1,0 +1,114 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Product2",
+        "referenceId": "ProductRef1"
+      },
+      "Name": "Compute Cluster - Standard",
+      "ProductCode": "CMP-STD",
+      "Description": "Baseline compute cluster sized for general workloads.",
+      "IsActive": true,
+      "Family": "Compute"
+    },
+    {
+      "attributes": {
+        "type": "Product2",
+        "referenceId": "ProductRef2"
+      },
+      "Name": "Compute Cluster - High Memory",
+      "ProductCode": "CMP-HMEM",
+      "Description": "High memory compute cluster for data-intensive services.",
+      "IsActive": true,
+      "Family": "Compute"
+    },
+    {
+      "attributes": {
+        "type": "Product2",
+        "referenceId": "ProductRef3"
+      },
+      "Name": "Managed Database - Postgres",
+      "ProductCode": "DB-PG",
+      "Description": "Managed PostgreSQL database with automated maintenance.",
+      "IsActive": true,
+      "Family": "Data"
+    },
+    {
+      "attributes": {
+        "type": "Product2",
+        "referenceId": "ProductRef4"
+      },
+      "Name": "Managed Database - Analytics",
+      "ProductCode": "DB-ANL",
+      "Description": "Columnar analytics warehouse with built-in ETL orchestration.",
+      "IsActive": true,
+      "Family": "Data"
+    },
+    {
+      "attributes": {
+        "type": "Product2",
+        "referenceId": "ProductRef5"
+      },
+      "Name": "Object Storage - Tier 1",
+      "ProductCode": "ST-PRM",
+      "Description": "Primary object storage tier with high availability SLAs.",
+      "IsActive": true,
+      "Family": "Storage"
+    },
+    {
+      "attributes": {
+        "type": "Product2",
+        "referenceId": "ProductRef6"
+      },
+      "Name": "Object Storage - Archive",
+      "ProductCode": "ST-ARC",
+      "Description": "Long-term archival storage with lifecycle management.",
+      "IsActive": true,
+      "Family": "Storage"
+    },
+    {
+      "attributes": {
+        "type": "Product2",
+        "referenceId": "ProductRef7"
+      },
+      "Name": "Service Mesh Gateway",
+      "ProductCode": "NET-SMG",
+      "Description": "Ingress gateway with zero-trust policy enforcement.",
+      "IsActive": true,
+      "Family": "Networking"
+    },
+    {
+      "attributes": {
+        "type": "Product2",
+        "referenceId": "ProductRef8"
+      },
+      "Name": "Observability & Monitoring Suite",
+      "ProductCode": "OPS-OBS",
+      "Description": "Metrics, tracing, and alerting bundle for platform teams.",
+      "IsActive": true,
+      "Family": "Operations"
+    },
+    {
+      "attributes": {
+        "type": "Product2",
+        "referenceId": "ProductRef9"
+      },
+      "Name": "Disaster Recovery Runbook",
+      "ProductCode": "OPS-DR",
+      "Description": "Automated failover and disaster recovery orchestration package.",
+      "IsActive": true,
+      "Family": "Operations"
+    },
+    {
+      "attributes": {
+        "type": "Product2",
+        "referenceId": "ProductRef10"
+      },
+      "Name": "24x7 Support SLA",
+      "ProductCode": "SUP-24X7",
+      "Description": "Premium support coverage with live incident response.",
+      "IsActive": true,
+      "Family": "Support"
+    }
+  ]
+}

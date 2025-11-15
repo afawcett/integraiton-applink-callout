@@ -1,0 +1,24 @@
+{
+  "name": "apexstubs",
+  "version": "1.0.0",
+  "description": "Tool to extract dynamically generated Apex classes from Salesforce HerokuAppLink integration",
+  "main": "apexstubs.js",
+  "type": "module",
+  "scripts": {
+    "extract": "node apexstubs.js"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "salesforce",
+    "apex",
+    "herokuapplink",
+    "external-services"
+  ],
+  "author": "",
+  "license": "MIT"
+}
