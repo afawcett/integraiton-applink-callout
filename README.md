@@ -103,7 +103,7 @@ sf org create scratch --definition-file config/project-scratch-def.json --alias 
 ./bin/data.sh
 
 # Deploy the ManageHerokuAppLink permission set (required for Heroku CLI commands)
-sf project deploy start --metadata Permissionset
+sf project deploy start --metadata PermissionSet:ManageHerokuAppLink
 
 # Assign the ManageHerokuAppLink permission set to your user
 sf org assign permset --name ManageHerokuAppLink
